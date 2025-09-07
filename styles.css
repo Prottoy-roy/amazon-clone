@@ -5,9 +5,11 @@
 }
 .border{
   border:2px solid transparent;
+  transition: 0.12s;
 }
 .border:hover {
   border-color:white;
+  padding: 9px;
 }
 .navbar {
   background-color: #0f1111;
@@ -22,10 +24,15 @@
   width: 100px;
 }
 .logo {
-  background-image: url(images/amazon-logo.jpg);
+  background-image: url(images/amazon_logo.png);
   background-size: cover;
   height: 50px;
   width:100%;
+  border:2px solid transparent;
+}
+.logo:hover{
+  border-color: white;
+  transition: 0.12s;
 }
 .deliver{
   display: flex;
@@ -42,7 +49,7 @@
   color:#cccccc;
 }
 .deliver2 {
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 700;
 }
 
@@ -50,14 +57,17 @@
 .nav-search {
   display: flex;
   height:40px;
-  width: 620px;
+  width: 840px;
   background-color: pink;
   border-radius: 6px;
   border-style:none;
 }
+.nav-search:active{
+  border:3px solid rgb(255, 94, 0);
+}
 .search-select {
   color:#555555;
-  width: 45px;
+  width: 56px;
   height: 40px;
   text-align: center;
   border-top-left-radius: 6px;
@@ -65,8 +75,14 @@
   background-color: #e5e3e3;
   font-size: 0.65rem;
 }
+.search-input[type="search"]:focus{
+  outline: none;
+  border:transparent;
+}
 .search-input {
+  border:none;
   width:100%;
+  font-size: 0.95rem;
 }
 .search-icon {
   width: 45px;
@@ -75,7 +91,114 @@
   justify-content: center;
   align-items: center;
   font-size: 1.25rem;
-  background-color:rgb(255, 200, 0);
+  background-color:rgb(255, 187, 0);
   border-bottom-right-radius: 6px;
   border-top-right-radius: 6px;
+}
+/*country flags*/
+.country-flags {
+  display: flex;
+  align-items: flex-end;
+}
+.country_flags {
+  display: flex;
+  margin-top: 1rem;
+}
+.bangladesh{
+  background-image: url(images/Flag_of_Bangladesh.png);
+  height: 16px;
+  width:21px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.bd {
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding-left: 0.25rem;
+}
+.down-arrow{
+  font-size: 0.58rem;
+  padding-bottom: 0.20rem;
+  margin-left: 0.12rem;
+}
+
+/*sign in and account list */
+
+.sign-in {
+  display: flex;
+}
+.sign-contant {
+  font-size: 0.85rem;
+}
+.accounts-contant{
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+.down {
+  display: flex;
+  align-items: flex-end;
+}
+
+/* returns and order */
+
+.returns-contant {
+  font-size: 0.85rem;
+}
+.order-contant {
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+/* cart */
+
+.cart {
+  display: flex;
+  font-weight: 600;
+  align-items: flex-end;
+}
+.cart i {
+  font-size: 1.75rem;
+}
+/* menu bar */
+
+.menu-bar {
+  display: flex;
+  align-items: center;
+  height: 39px;
+  background-color: #293c3c;
+  color:#ffffff;
+  padding-left: 1.58rem;
+}
+.border2{
+  border:2px solid transparent;
+}
+.border2:hover{
+  border-color: #cccccc;
+  padding: 5px;
+}
+.bar-icon{
+  display: flex;
+  align-items: flex-start;
+}
+.menu-bar ul{
+  padding:0;
+}
+.bar-icon-all{
+  font-size: 0.85rem;
+  font-weight: 600;
+  align-items: flex-start;
+}
+.bar-icon i{
+  color:#ffffff;
+  font-size: 1.25rem;
+}
+.bar-items{
+  display:flex;
+}
+.bar-items a{
+  color:#ffffff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 400;
+  margin-left: 1.25rem;
+  padding-left: 0px;
 }
